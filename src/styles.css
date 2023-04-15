@@ -1,0 +1,312 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+/* card-info */
+.card-info {
+
+  position: absolute;
+  width: 390px;
+  height: 844px;
+  left: 0px;
+  top: 0px;
+  
+  background: #FFFBED;
+  
+  
+  }
+  /* bottom */
+  .bottom {
+  
+  position: absolute;
+  width: 390px;
+  height: 50px;
+  left: 0px;
+  top: 794px;
+  
+  background: rgba(121, 83, 75, 0.73);
+  
+  
+  }
+  /* location-icon */
+  .location-icon {
+  
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  left: 305px;
+  top: 7px;
+  
+  
+  
+  }
+  /* home-3 */
+  .home-3 {
+
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%; 
+  background-color: #d9d9d9;
+ 
+  
+  }
+  /* Vector-3 */
+  .Vector-3 {
+  
+  position: absolute;
+  top: 30%;
+  left: 22%;
+  bottom: 25%;  
+  
+  }
+  /* home-icon */
+  .home-icon {
+  
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  left: 177px;
+  top: 7px;
+  
+  
+  
+  }
+  /* home-2 */
+  .home-2 {
+  
+    position: relative;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #d9d9d9;
+  
+  
+  }
+  /* Vector-2 */
+  .Vector-2 {
+  
+    position: absolute;
+    left: 27%;
+    top: 30%;
+    bottom: 25%;
+  
+  
+  }
+  /* pencil-icon */
+  .pencil-icon {
+  
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  left: 49px;
+  top: 7px;
+  
+  
+  
+  }
+  /* home-1 */
+  .home-1 {
+  
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #d9d9d9;
+  
+  
+  }
+  /* Vector-1 */
+  .Vector-1 {
+  
+  position: absolute;
+  left: 26%;
+  top: 30%;
+  bottom: 25%;
+  
+  
+  }
+  /* content */
+  .content {
+  
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 15px;
+  
+  position: relative;
+  width: 329px;
+  height: 704px;
+  left: 30px;
+  top: 61.65px;
+  
+  
+  
+  }
+  /* title */
+  .title {
+  
+  width: 329px;
+  height: 138px;
+  
+  
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  
+  
+  }
+  /* postmark */
+  .postmark {
+  
+  position: relative;
+  width: 131px;
+  height: 138.35px;
+  left: 198px;
+  top: 0px;
+  
+  
+  
+  }
+  /* stamp */
+ .stamp img {
+  position: absolute;
+  left: 22.42%;
+  right: 0%;
+  top: 0%;
+  bottom: 0.37%;
+
+  /*background: url(stamp.png);*/
+  
+  }
+  /* logo */
+  .logo {
+  
+  position: absolute;
+  width: 58px;
+  height: 37px;
+  left: 0px;
+  top: 101.35px;
+  
+  /*background: url(logo.png);*/
+  
+  
+  }
+  /* department name */
+  .departmentname {
+  
+  position: absolute;
+  width: 187px;
+  height: 48px;
+  left: 0px;
+  top: 76.35px;
+  
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  
+  color: #000000;
+  
+  
+  
+  }
+  /* name */
+  .name {
+  
+  position: absolute;
+  width: 122px;
+  height: 48px;
+  left: 0px;
+  top: 13.35px;
+  
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  
+  color: #000000;
+  
+  
+  
+  }
+  /* text */
+  .text {
+  
+  width: 329px;
+  height: 379px;
+  
+  background: rgba(144, 188, 146, 0.37);
+  
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  
+  
+  }
+  /* wishtext */
+  .wishtext {
+  
+  position: relative;
+  width: 260px;
+  height: 316px;
+  left: 32px;
+  top: 50px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  
+  color: #000000;
+  
+  
+  
+  }
+  /* photo */
+  .photo {
+  
+  width: 329px;
+  height: 157px;
+  
+  background: rgba(144, 188, 146, 0.37);
+  
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  
+  
+  }
+  /* photoupload */
+  .photoupload {
+  
+  position: relative;
+  width: 329px;
+  height: 157px;
+  left: 0px;
+  top: 0.35px;
+  
+  /*background: url(photoupload.png);*/
+  
+  
+  }
+  /* top */
+  .top {
+  
+  position: absolute;
+  width: 390px;
+  height: 38px;
+  left: 0px;
+  top: 0px;
+  
+  background: rgba(121, 83, 75, 0.73);
+  }
+  
