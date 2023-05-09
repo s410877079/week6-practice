@@ -1,0 +1,241 @@
+.card {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    /* width: 403px;
+    height: 682px; */
+    max-width: 370px;
+    max-height: 560px;
+
+    background: #fffbed;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+/* card-content */
+.card-content {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 38px 15px;
+    gap: 60px;
+
+    width: 370px;
+    height: 560px;
+
+    background: #f5f5f5;
+
+    /* Inside auto layout */
+    /* flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1; */
+}
+
+/* background */
+.background {
+    box-sizing: border-box;
+    margin-top: 30px;
+    width: 350px;
+    height: 550px;
+
+    background: #f5f5f5;
+    border: 1px solid #524b4b;
+
+    /* Inside auto layot */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+/* photo-upload */
+.photo-upload {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    left: 18px;
+    top: 407px;
+}
+
+/* photo */
+.photo {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    left: 15px;
+    /* background-image:; */
+    background-size: cover;
+    background-position: center;
+
+    /* background: #f8ebbe; */
+}
+
+/* stamp-section */
+.stamp-section {
+    position: absolute;
+    width: 338px;
+    height: 170px;
+    left: 10px;
+    top: 25px;
+}
+
+/* sender-info */
+.sender-info {
+    position: absolute;
+    width: 160px;
+    height: 112px;
+    left: 20px;
+    top: 40px;
+}
+
+/* sender-grade */
+.sender-grade {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 111px 0px 0px;
+    gap: 7px;
+
+    position: absolute;
+    width: 160px;
+    height: 28px;
+    left: 0px;
+    top: 84px;
+}
+
+/* sender-grade-text */
+.sender-grade-text {
+    width: 131px;
+    height: 28px;
+    font-family: "Jacques Francois";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    margin-left: 4px;
+
+    color: #000000;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* sender-name */
+.sender-name {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 111px 0px 0px;
+    gap: 7px;
+
+    position: absolute;
+    width: 158px;
+    height: 28px;
+    left: 4px;
+    top: 42px;
+}
+
+/* sender-name-text */
+.sender-name-text {
+    width: 131px;
+    height: 28px;
+
+    font-family: "Imperial Script";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    color: #000000;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* sender */
+.sender {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 111px 0px 0px;
+    gap: 7px;
+
+    position: absolute;
+    width: 158px;
+    height: 29px;
+    left: 7px;
+    top: 0px;
+}
+
+/* sender-text */
+.sender-text {
+    width: 78px;
+    height: 29px;
+
+    font-family: "Jacques Francois";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    color: #000000;
+
+    /* border: 1px solid #ffffff; */
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* stamp */
+.stamp-holder {
+    position: absolute;
+    width: 120px;
+    height: 140px;
+    left: calc(50% - 154px / 2 + 92px);
+    top: 30px;
+}
+
+/* stamp-photo */
+.stamp-photo {
+    position: absolute;
+    width: 143px;
+    height: 148px;
+    /* left: calc(50% - 143px / 2 - 0.5px); */
+    top: 0px;
+
+    background: #ffffff;
+}
+
+/* seal */
+.seal-icon {
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    left: -15px;
+    top: 60px;
+}
