@@ -1,7 +1,8 @@
+// import { PostalStamp } from "../Postalstamp"
 import Stamp from "../Stamp"
 import "./index.css"
-import logo from "./seal-icon.svg"
 import "./wish.css"
+import logo from "./icon.png"
 import Photo from "../week9/App-customCard"
 
 export default function Card({ user }) {
@@ -12,7 +13,7 @@ export default function Card({ user }) {
                 <div class="background"></div>
                 <StampSection name={name} grade={grade} imgSrc={imgSrc} />
                 <Wish wish={wish} />
-                <PhotoUpload photo={imgSrc2}/>
+                <PhotoUpload photo={imgSrc2} />
             </div >
         </div>
     )
@@ -34,6 +35,7 @@ function StampSection({ name, grade, imgSrc }) {
             </div>
             <div className="stamp-holder">
                 <Stamp imgSrc={imgSrc} />
+                {/* <PostalStamp /> */}
                 <div className="seal-icon">
                     <img className="seal-icon" src={logo} /></div>
             </div>
@@ -56,8 +58,8 @@ function Wish({ wish }) {
 function PhotoUpload({ imgSrc2 }) {
     return (
         <div className="photo-upload">
-            <img className="photo" src={imgSrc2} />
-            {/* <Photo src={imgSrc2} /> */}
+            {/* <img className="photo" src={imgSrc2} /> */}
+            <Photo src={imgSrc2} />
         </div>
     )
 }
