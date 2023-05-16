@@ -1,15 +1,13 @@
 import * as React from 'react';
-import { Main } from "../components/Layout";
-import { NavbarCustom, NavbarItem } from "../components/NavbarCustom";
+import { Main } from '../Layout';
+import { NavbarCustom, NavbarItem } from '../NavbarCustom';
 import './App.css'
 import PlayIcon from '@mui/icons-material/PlayArrow';
 import NextIcon from '@mui/icons-material/FastForward';
 import PreviousIcon from '@mui/icons-material/FastRewind';
-import Card from '../components/Card2';
+import Card from '../Card2'; 
 import { IconButton } from '@mui/material';
-import appConfig from "../appConfig.json"
-import dataJson from "./data.json"
-import Image from "mui-image"
+import dataJson from './data.json'
 
 
 export default function App() {
@@ -30,6 +28,9 @@ export default function App() {
         <div className="App">
             <Main>
                 {cards}
+                {/* <Card user={users[0]}/>
+                <Card user={users[1]}/>
+                <Card user={users[2]}/> */}
             </Main>
             <NavbarCustom>
                 <NavbarItem>
@@ -89,7 +90,7 @@ function getUserPositionIndex(user0) {
     return pos
 }
 
-function test(){
+function test() {
     user0 = ['Timestamp', 'Email Address', 'Name', 'Photo', 'Grade', 'Wish', 'ThumbnailLink']
     var pos = Object()
     user0.map(
