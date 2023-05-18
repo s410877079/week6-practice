@@ -5,7 +5,7 @@ import './App.css'
 import PlayIcon from '@mui/icons-material/PlayArrow';
 import NextIcon from '@mui/icons-material/FastForward';
 import PreviousIcon from '@mui/icons-material/FastRewind';
-import Card from '../Card2';
+import Card from '../Card';
 import { IconButton } from '@mui/material';
 
 
