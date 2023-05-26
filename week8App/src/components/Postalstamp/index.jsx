@@ -1,15 +1,15 @@
 import "./index.css"
-import postalStamp from "./stamps.jsx"
+import postalStamp from "./stamps"
 
 export default function PostalStamp() {
-
-    switch (variant) {
-        case 0:
-    }
+    
+    // switch(varient){
+    //     case 0:
+    // }
 
     return (
         <div className="seal">
-            <img class="seal-icon" src={postalStamp[2]} />
+            <img className="seal-icon" src={postalStamp[1]}/>
         </div>
     )
 }

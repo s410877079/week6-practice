@@ -9,8 +9,8 @@
         padding: 0px;
         gap: 30px;
         
-        position: absolute;
-        /* position: fixed; */
+        /* position: absolute; */
+        position: fixed;
         height: 97px;
         left: 0px;
         right: 0px;

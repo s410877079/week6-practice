@@ -5,33 +5,34 @@ import './App.css'
 import PlayIcon from '@mui/icons-material/PlayArrow';
 import NextIcon from '@mui/icons-material/FastForward';
 import PreviousIcon from '@mui/icons-material/FastRewind';
-import Card from '../Card2'; 
+import Card from '../Card'; 
 import { IconButton } from '@mui/material';
 import dataJson from './data.json'
+import { Gallery, GalleryItem } from '../Layout2';
 
 
 export default function App() {
 
-    console.log(dataJson)
-
     const users = convertUsersToArrayOfObject(dataJson)
-
+    
+    // const style = {margin:"auto", width: "370px"};
     console.log(users)
 
     const cards = users.map((e, i) => {
         return (
-            <Card user={e} key={i} />
+            <GalleryItem key={i}>
+                <Card user={e} style={{margin: 'auto', width: "370px"}}/>
+            </GalleryItem>
         )
     })
-
+    
+    // console.log(style)
     return (
         <div className="App">
-            <Main>
+            {/* <Card user={users[2]} style={style}/> */}
+            <Gallery>
                 {cards}
-                {/* <Card user={users[0]}/>
-                <Card user={users[1]}/>
-                <Card user={users[2]}/> */}
-            </Main>
+            </Gallery>
             <NavbarCustom>
                 <NavbarItem>
                     <IconButton>
@@ -72,7 +73,8 @@ function getUser(targetUser, pos) {
             name: targetUser[pos.name],
             grade: targetUser[pos.grade],
             imgSrc: targetUser[pos.imgSrc],
-            wish: targetUser[pos.wish]
+            wish: targetUser[pos.wish],
+            imgSrc2: targetUser[pos.Photo]
         }
     )
 }
@@ -87,6 +89,7 @@ function getUserPositionIndex(user0) {
     pos.name = pos.Name
     pos.grade = pos.Grade
     pos.wish = pos.Wish
+    pos.imgSrc2 = pos.Photo
     return pos
 }
 
@@ -102,5 +105,6 @@ function test() {
     pos.name = pos.Name
     pos.grade = pos.Grade
     pos.wish = pos.Wish
+    pos.imgSrc2 = pos.Photo
     return pos
 }

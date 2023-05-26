@@ -1,4 +1,3 @@
-import PostalStamp from "../Postalstamp"
 import Stamp from "../Stamp"
 import "./index.css"
 import "./wish.css"
@@ -35,7 +34,6 @@ function StampSection({ name, grade, imgSrc }) {
             </div>
             <div className="stamp-holder">
                 <Stamp imgSrc={imgSrc} />
-                {/* <PostalStamp /> */}
                 <div className="seal">
                     <img className="seal-icon" src={logo} /></div>
             </div>

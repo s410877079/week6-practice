@@ -4,7 +4,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 0px;
 
     position: absolute;
     /* width: 403px;
@@ -12,9 +12,24 @@
     max-width: 370px;
     max-height: 560px;
 
-    /* background: #fffbed;
+    background: #fffbed;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px; */
+    border-radius: 5px;
+
+     /* Inside auto layout */
+
+     flex: none;
+     order: 0;
+     align-self: stretch;
+     flex-grow: 1;
+ 
+     /* Auto layout */
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     padding: 0px;
+ 
 }
 
 /* card-content */
@@ -42,8 +57,8 @@
 .background {
     box-sizing: border-box;
     margin-top: 30px;
-    width: 350px;
-    height: 550px;
+    width: 370px;
+    height: 500px;
 
     background: #f5f5f5;
     border: 1px solid #524b4b;
@@ -58,17 +73,17 @@
 /* photo-upload */
 .photo-upload {
     position: absolute;
-    width: 300px;
+    width: 370px;
     height: 150px;
-    left: 18px;
-    top: 430px;
+    left: -13px;
+    top: 350px;
 }
 
 /* photo */
 .photo {
     position: absolute;
     width: 300px;
-    height: 150px;
+    height: 100px;
     left: 48px;
     /* background-image:; */
     background-size: cover;
@@ -82,8 +97,8 @@
     position: absolute;
     width: 338px;
     height: 170px;
-    left: 40px;
-    top: 60px;
+    left: 10px;
+    top: 40px;
 }
 
 /* sender-info */

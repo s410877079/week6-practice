@@ -1,7 +1,7 @@
+import PostalStamp from "../Postalstamp"
 import Stamp from "../Stamp"
 import "./index.css"
 import "./wish.css"
-import logo from "./icon.png"
 import Photo from "../week9/App-customCard"
 
 export default function Card({ user, style}) {
@@ -34,8 +34,7 @@ function StampSection({ name, grade, imgSrc }) {
             </div>
             <div className="stamp-holder">
                 <Stamp imgSrc={imgSrc} />
-                <div className="seal">
-                    <img className="seal-icon" src={logo} /></div>
+                <PostalStamp/>
             </div>
         </div>
 

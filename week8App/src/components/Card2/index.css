@@ -58,10 +58,10 @@
 /* photo-upload */
 .photo-upload {
     position: absolute;
-    width: 300px;
+    width: 370px;
     height: 150px;
-    left: 18px;
-    top: 430px;
+    left: -13px;
+    top: 410px;
 }
 
 /* photo */
@@ -82,8 +82,8 @@
     position: absolute;
     width: 338px;
     height: 170px;
-    left: 40px;
-    top: 60px;
+    left: 10px;
+    top: 40px;
 }
 
 /* sender-info */
@@ -150,13 +150,13 @@
 
 /* sender-name-text */
 .sender-name-text {
-    width: 131px;
+    width: 140px;
     height: 28px;
 
     font-family: "Imperial Script";
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 25px;
     line-height: 39px;
     display: flex;
     align-items: center;
@@ -193,7 +193,7 @@
 
     font-family: "Jacques Francois";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 22px;
     line-height: 29px;
     /* identical to box height */
@@ -229,35 +229,4 @@
     top: 0px;
 
     background: #ffffff;
-}
-
-/* seal */
-.seal {
-
-    box-sizing: border-box;
-
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 15px 0px;
-    gap: 10px;
-
-    position: absolute;
-    width: 65px;
-    height: 65px;
-    left: -25px;
-    bottom: -30px;
-
-    border: 3px solid #000000;
-    border-radius: 150px;
-    transform: rotate(28deg);
-}
-.seal-icon {
-    position: absolute;
-    width: 60px;
-    height: 50px;
-    /* left: -15px; */
-    top: 4px;
 }
