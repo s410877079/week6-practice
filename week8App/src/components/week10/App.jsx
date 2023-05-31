@@ -12,16 +12,17 @@ import { Gallery, GalleryItem } from '../Layout2';
 
 
 export default function App() {
-
-    const users = convertUsersToArrayOfObject(dataJson)
     
     // const style = {margin:"auto", width: "370px"};
-    console.log(users)
+    console.log(dataJson)
+    const users = convertUsersToArrayOfObject(dataJson)
+
+    const style={margin: 'auto', width: "370px"};
 
     const cards = users.map((e, i) => {
         return (
             <GalleryItem key={i}>
-                <Card user={e} style={{margin: 'auto', width: "370px"}}/>
+                <Card user={e}/>
             </GalleryItem>
         )
     })
@@ -74,7 +75,7 @@ function getUser(targetUser, pos) {
             grade: targetUser[pos.grade],
             imgSrc: targetUser[pos.imgSrc],
             wish: targetUser[pos.wish],
-            imgSrc2: targetUser[pos.Photo]
+            imgSrc2: targetUser[pos.imgSrc2]
         }
     )
 }

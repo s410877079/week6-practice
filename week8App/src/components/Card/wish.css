@@ -1,15 +1,15 @@
 /* wish */
 .wish {
-    /* display: flex; */
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 5px 0px;
     gap: 0px;
     position: absolute;
-    width: 310px;
-    height: 130px;
+    width: 312px;
+    height: 191px;
     left: 35px;
-    top: 258px;
+    top: 235px;
     
     }
 
@@ -45,7 +45,7 @@
     /* wish-text */
     .wish-text {
     
-    width: 80%;
+    width: 90%;
     height: 125px;
     flex: none;
     order: 1;
@@ -81,7 +81,7 @@
     .right-quotation {
     
     width: 8px;
-    height: 140px;
+    height: 100px;
   
     font-family: 'Inter';
     font-style: normal;
