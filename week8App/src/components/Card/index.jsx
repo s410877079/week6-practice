@@ -24,7 +24,7 @@ function StampSection({ name, grade }) {
         <div className="stamp-section">
             <div className="sender-info">
                 <div className="sender">
-                    <div className="sender-text">Sender:</div>
+                    <div className="sender-text">From:</div>
                 </div>
                 <div className="sender-name">
                     <div className="sender-name-text">{name}</div>

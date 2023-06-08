@@ -5,19 +5,19 @@ import './App.css'
 import PlayIcon from '@mui/icons-material/PlayArrow';
 import NextIcon from '@mui/icons-material/FastForward';
 import PreviousIcon from '@mui/icons-material/FastRewind';
-import Card from '../Card'; 
+import Card from '../Card';
 import { IconButton } from '@mui/material';
 import dataJson from './data.json'
 import { Gallery, GalleryItem } from '../Layout2';
 
 
 export default function App() {
-    
+
     // const style = {margin:"auto", width: "370px"};
     console.log(dataJson)
     const users = convertUsersToArrayOfObject(dataJson)
 
-    const style={margin: 'auto', width: "370px"};
+    const style = { margin: 'auto', width: "370px" };
 
     const cards = users.map((e, i) => {
         return (
@@ -26,7 +26,7 @@ export default function App() {
             </GalleryItem>
         )
     })
-    
+
     // console.log(style)
     return (
         <div className="App">

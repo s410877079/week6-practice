@@ -11,8 +11,9 @@ export function Gallery({ children }) {
 }
 export function GalleryItem({ children }) {
     return (
-        <Grid2 item xs={12} sm={'auto'} md={6} lg={4} xl={3}>
-            {children}
+        <Grid2 item="true" xs={12} sm={"auto"} md={6} lg={4} xl={3} >
+            
+        {children}
         </Grid2>
     )
 }

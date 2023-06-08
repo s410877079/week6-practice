@@ -47,8 +47,8 @@
     position: absolute;
     width: 120px;
     height: 140px;
-    left: calc(50% - 154px / 2 + 92px);
-    top: 60px;
+    left: 160px;
+    top: 50px;
 }
 
 /* stamp-photo */
