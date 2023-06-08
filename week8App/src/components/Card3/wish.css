@@ -44,7 +44,7 @@
 /* wish-text */
 .wish-text {
     width: 100%;
-    height: 50px;
+    height: 72px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
@@ -59,13 +59,14 @@
     /* white-space: nowrap; */
     overflow: hidden;
     text-overflow: ellipsis;
+
     display: -webkit-box;
     -webkit-line-clamp: 3;
     line-clamp: 2;
     -webkit-box-orient: vertical;
 }
 
-.wish-text>q {
+.wish-text > q {
     quotes: &ldquo &rdquo;
 }
 

@@ -6,9 +6,11 @@ import "./wish.css"
 import Photo from "../week15/data.json"
 import PostedStamp from "../Postedstamp"
 import Stack from '@mui/material/Stack';
+// import IconButton from '@mui/material/IconButton';
 import Image from "mui-image"
 import { useEffect, useState } from "react";
 import axios from 'axios';
+import { Button } from '@mui/material';
 
 export default function Card2({ user }) {
     const { name, grade, imgSrc, wish, id } = user
@@ -71,15 +73,14 @@ function Sender({ name, grade }) {
 function Wish({ wish }) {
     return (
         <div className="wish">
-            {/* <div className="wish-text">
-                <Button color='secondary'>
+            <div className="wish-text">
+                <Button>
                     <q>
                         <Typography>{wish}</Typography>
                     </q>
-                    <q><span style={{ padding: "0 10px" }}>{wish}</span></q>
                 </Button>
-            </div> */}
-            <div className="wish-text">{wish}</div>
+            </div>
+            {/* <div className="wish-text">{wish}</div> */}
         </div>
     )
 }
