@@ -1,12 +1,11 @@
 import * as React from 'react';
-// import { NavbarCustom, NavbarItem } from '../NavbarCustom';
 import './App.css'
 import dataJson from './data.json'
 import Card2 from '../Card3';
 import appConfig from "../week15/appConfig.json"
 import SearchAppBar from '../SearchAppBar';
 import { Gallery, GalleryItem } from '../Layout2';
-import { EmailShareButton, FacebookIcon, FacebookShareButton, LineIcon, LineShareButton } from 'react';
+// import { EmailShareButton, FacebookIcon, FacebookShareButton, LineIcon, LineShareButton } from 'react';
 import axios from 'axios';
 import { useState } from 'react';
 

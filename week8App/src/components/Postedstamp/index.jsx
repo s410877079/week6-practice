@@ -4,7 +4,7 @@ import Seal from "./Seal"
 
 export default function PostedStamp({ imgSrc, sealVariant, sealLocation }) {
 
-  sealVariant = sealVariant ? sealVariant : 0
+  // sealVariant = sealVariant ? sealVariant : 0
   sealLocation = sealLocation ? sealLocation : { left: "-20px", bottom: "-30px", transform: "rotate(-45deg)" }
 
   return (

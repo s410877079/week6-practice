@@ -3,11 +3,11 @@ import seals from "./seals"
 
 export default function Seal({ variant, location }) {
 
-    variant = variant ? variant : 0
+    variant = variant ? (variant-1):2
 
-    console.log('seal variant')
-    console.log(seals)
-    console.log(location)
+    // console.log('seal variant')
+    // console.log(seals)
+    // console.log(location)
 
 
     return (
