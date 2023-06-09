@@ -6,14 +6,15 @@ import "./wish.css"
 import Photo from "../week15/data.json"
 import PostedStamp from "../Postedstamp"
 import Stack from '@mui/material/Stack';
-// import IconButton from '@mui/material/IconButton';
+import IconButton from '@mui/material/IconButton';
 import Image from "mui-image"
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from 'axios';
-import { Button } from '@mui/material';
+import { Box, Button, Container } from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
 
 export default function Card2({ user }) {
-    const { name, grade, imgSrc, wish, id } = user
+    const { name, grade, imgSrc, wish, id, imgSrc2 } = user
     console.log(user)
     const [showFront, setShowFront] = useState(true)
 
@@ -24,28 +25,29 @@ export default function Card2({ user }) {
         setShowFront(true)
     }
 
-    useEffect(() => {
-        axios.get(imgSrc).then(res => {
-            console.log(res)
-        })
-    }, [])
+    // useEffect(() => {
+    //     axios.get(imgSrc).then(res => {
+    //         console.log(res)
+    //     })
+    // }, [])
 
     var cardContent = showFront ?
-        <ContentPostalFront imgSrc={imgSrc} sealVariant={5} name={name} grade={grade} wish={wish} onClick={handleClipWish} /> :
+        <ContentPostalFront imgSrc={imgSrc} sealVariant={5} name={name} grade={grade} wish={wish} imgSrc2={imgSrc2} onClick={handleClipWish} /> :
         <ContentPostalBack imgSrc={imgSrc} wish={wish} onClick={handleCloseBackContent} />
 
     return (
-        <Card sx={{ maxWidth: 350, margin: "auto", height: 587 }}>
+        <Card sx={{ maxWidth: 345, margin: "auto", height: 587 }} id={id}>
+            <div id={`${id}`}></div>
+            {/* {cardContent} */}
             <div className="card-content">
                 <div class="background">
-                    <Sender name={name} grade={grade} imgSrc={imgSrc} />
+                    <Sender name={name} grade={grade}/>
                     <Wish wish={wish} />
-                    <PostedStamp imgSrc={imgSrc}/>
-                    {/* <div id={`${id}`} className='card-id'></div>
-                    {cardContent} */}
+                    <PostedStamp imgSrc={imgSrc} />
+                    <PhotoUpload imgSrc2={imgSrc2} />
+                    
                 </div>
             </div >
-            {/* <PhotoUpload photo={imgSrc2} /> */}
         </Card>
 
     );
@@ -85,15 +87,15 @@ function Wish({ wish }) {
     )
 }
 
-// function PhotoUpload({ imgSrc2 }) {
-//     return (
-//         <div className="photo-upload">
-//             <img className="photo" src={imgSrc2} />
-//         </div>
-//     )
-// }
+function PhotoUpload({ imgSrc2 }) {
+    return (
+        <div className="photo-upload">
+            <img className="photo" src={imgSrc2} />
+        </div>
+    )
+}
 
-function ContentPostalFront({ imgSrc, sealVariant, name, grade, wish, onClick }) {
+function ContentPostalFront({ imgSrc, sealVariant, name, grade, wish, imgSrc2, onClick }) {
 
     return (
         <CardContent>
@@ -110,7 +112,9 @@ function ContentPostalFront({ imgSrc, sealVariant, name, grade, wish, onClick })
                         <Typography noWrap sx={{ width: "300px" }}>{wish}</Typography>
                     </Button>
                 </Box>
-
+                <Box>
+                    <PhotoUpload imgSrc2={imgSrc2} />
+                </Box>
             </Stack>
         </CardContent>
     )
